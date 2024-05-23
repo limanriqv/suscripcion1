@@ -27,3 +27,18 @@
    background-attachment: fixed; 
 
     }
+
+    .form-row{
+        display:block;
+        background-position:center center;
+        flex-direction:column;
+        background-repeat: no-repeat;
+        background-size:cover;
+        height:100%; 
+        width: 100%;
+        background-color:#b3b792;
+        padding:16%;
+        text-align: center;
+        line-height: 1.5;
+        
+    }
