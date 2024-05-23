@@ -1,0 +1,58 @@
+{% extends "Mimembresia/base.html" %} 
+{% load static %}
+
+
+{% block titulo %} Membresias {% endblock %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'Mimembresia/styles/index.css' %}">
+
+{% endblock %}
+
+
+{% block main %}
+
+
+  
+
+<section id="inicio">
+   
+    <div>
+        <img class= "portada" src= "{% static 'Mimembresia/img/portada.jpg' %}" alt="portada">
+    </div>
+</section>
+
+
+
+  <section id="descripcion">
+    <div class="container">
+      <h2>Membresia CaC</h2>
+      <h3>Registrate a los cursos</h3>
+        </div>
+    </section>
+  
+  <section id="registro">
+      <div class="container"> 
+    <div class="row mx-5">
+
+    <div class="col ml-5">
+  <div class="card" style="width: 18rem;">
+    <img src="{% static 'Mimembresia/img/inicio.jpg' %}" alt="inicio" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Aprende a programar</h5>
+      <p class="card-text">Cursa a tu tiempo y con los mejores.</p>
+      <a href="{% url 'registro' %}" class="btn btn-primary">Registrate</a>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+
+{% endblock %}
+
+
+
+

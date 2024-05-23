@@ -1,0 +1,61 @@
+
+
+
+#inicio .portada{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction:row;
+    height: 50vh;
+    width:100%;
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position: center center;
+    margin: none;
+}
+
+#registro .card{
+    width: 100%;
+    height: 100%;         
+    background-size: cover;
+    background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed; 
+}
+
+#registro .container{
+    display:flex;
+    justify-content:center;
+    background-color:#d3d3d3;
+    width: 100%;
+    align-items: center;
+    background-position: center center;
+    background-size: cover;
+
+}
+.card img{
+    display: block;
+    width: 100%;
+    height: 50vh;         
+    background-size: cover;
+    background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed; 
+
+    }
+
+#descripcion h2{
+    font-size: 3vw;
+    }
+
+ #descripcion .container{
+        text-align: center;
+        padding: 20vh;
+        height: 30vh;
+        width: 100%;
+        background-color: #d3d3d3;
+    
+    }
+
+ 
