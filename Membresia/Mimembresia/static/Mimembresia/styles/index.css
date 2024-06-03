@@ -1,61 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
+nav a {
+    font-size: 1.5rem;
+    margin-right: 4rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
 
-#inicio .portada{
+.home1 {
+    width: 100vw;
+    height: 100vh;
+    padding: 7% 9%;
+}
+
+.home1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 2rem;
+}
+
+.home2 {
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction:row;
-    height: 50vh;
-    width:100%;
-    background-repeat:no-repeat;
-    background-size:cover; 
-    background-position: center center;
-    margin: none;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 100vh;
+    padding: 0% 8%;
 }
 
-#registro .card{
-    width: 100%;
-    height: 100%;         
+.home2 img {
+    width: 15vw;
+    height: 40vh;
+    margin: 0 0 0 3rem;
+   
     background-size: cover;
-    background-position: center center;
-   background-repeat: no-repeat;
-   background-attachment: fixed; 
 }
 
-#registro .container{
-    display:flex;
-    justify-content:center;
-    background-color:#d3d3d3;
-    width: 100%;
-    align-items: center;
-    background-position: center center;
-    background-size: cover;
-
+.texto p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-family: "poppins", sans-serif;
+    text-align: justify;
 }
-.card img{
-    display: block;
-    width: 100%;
-    height: 50vh;         
-    background-size: cover;
-    background-position: center center;
-   background-repeat: no-repeat;
-   background-attachment: fixed; 
 
-    }
+.texto a {
+    display: inline-block;
+    background: var(--button-color);
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    font-size: 1.8rem;
+    color: var(--bg-color);
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    transition: 0.3s;
+    margin: 1rem 0 0 20rem;
+}
 
-#descripcion h2{
-    font-size: 3vw;
-    }
-
- #descripcion .container{
-        text-align: center;
-        padding: 20vh;
-        height: 30vh;
-        width: 100%;
-        background-color: #d3d3d3;
-    
-    }
-
- 
+.texto a:hover {
+    box-shadow: 0 0 0.5rem var(--text-color);
+}

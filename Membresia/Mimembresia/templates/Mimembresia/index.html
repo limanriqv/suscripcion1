@@ -2,7 +2,8 @@
 {% load static %}
 
 
-{% block titulo %} Membresias {% endblock %}
+
+{% block titulo %} Museo Pass{% endblock %}
 
 {% block extra_css %}
 
@@ -12,81 +13,33 @@
 
 
 {% block main %}
+<main>
 
-
-  
-
-<section id="inicio">
-   
-    <div>
-        <img class= "portada" src= "{% static 'Mimembresia/img/portada.jpg' %}" alt="portada">
+    <div class="home1">
+        <img src="{% static 'Mimembresia/img/imagen1.jpg' %}" alt="img1">
     </div>
-</section>
 
+    <div class="home2">
+        <div class="texto">
+            <p>
+                Únete a nuestra exclusiva membresía para amantes de los museos y disfruta de acceso ilimitado a una
+                amplia gama de museos y galerías de arte a nivel nacional e internacional. Como miembro, disfrutarás
+                de descuentos especiales en tiendas de museos, cafeterías y eventos especiales, participarás en
+                eventos y actividades exclusivas, recibirás boletines informativos y te unirás a una comunidad
+                apasionada por el arte y la cultura. ¡Regístrate hoy mismo y conviértete en un verdadero entusiasta
+                del arte!
+            </p>
 
-
-  <section id="descripcion">
-    <div class="container">
-      <h2>Membresia CaC</h2>
-      <h3>Registrate a los cursos</h3>
+            <a href="membresias.html">SUSCRIPCIÓN</a>
         </div>
-    </section>
-  
-  <section id="registro">
-      <div class="container"> 
-    <div class="row mx-5">
 
-    <div class="col ml-5">
-  <div class="card" style="width: 18rem;">
-    <img src="{% static 'Mimembresia/img/inicio.jpg' %}" alt="inicio" class="card-img-top">
-    <div class="card-body">
-      <h5 class="card-title">Aprende a programar</h5>
-      <p class="card-text">Cursa a tu tiempo y con los mejores.</p>
-      <a href="#" class="btn btn-primary">Ver mas</a>
+        <img src="{% static 'Mimembresia/img/imagen2.jpg' %}" alt="img2">
+        <img src="{% static 'Mimembresia/img/imagen3.jpg' %}" alt="img3">
+        <img src="{% static 'Mimembresia/img/imagen4.jpg' %}" alt="img4">
+
     </div>
-  </div>
-  </div>
-</div>
 
-
-<section id="registro">
-  <div class="container"> 
-<div class="row mx-5">
-
-<div class="col ml-5">
-<div class="card" style="width: 18rem;">
-<img src="{% static 'Mimembresia/img/inicio.jpg' %}" alt="inicio" class="card-img-top">
-<div class="card-body">
-  <h5 class="card-title">Aprende a programar</h5>
-  <p class="card-text">Cursa a tu tiempo y con los mejores.</p>
-  <a href="#" class="btn btn-primary">Ver mas</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-
-<section id="registro">
-<div class="container"> 
-<div class="row mx-5">
-
-<div class="col ml-5">
-<div class="card" style="width: 18rem;">
-<img src="{% static 'Mimembresia/img/inicio.jpg' %}" alt="inicio" class="card-img-top">
-<div class="card-body">
-<h5 class="card-title">Aprende a programar</h5>
-<p class="card-text">Cursa a tu tiempo y con los mejores.</p>
-<a href="#" class="btn btn-primary">Ver mas</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-
-
-
+</main>
 {% endblock %}
 
 
