@@ -6,9 +6,18 @@ from .forms import*
 def index (request):
     return render(request,'Mimembresia/index.html')
 
-def registro (request):
-    contexto = { 'registro_form' : RegistroForm() }
-    return render(request,'Mimembresia/registro.html',contexto)
+def about(request):
+    return render(request,"Mimembresia/about.html")
+
+def contacto(request):
+    return render(request,"Mimembresia/contacto.html")
+
+def membresias(request):
+    return render(request,"Mimembresia/membresias.html")
+
+def museos(request):
+    return render(request,"Mimembresia/museos.html")
+
 
 
 

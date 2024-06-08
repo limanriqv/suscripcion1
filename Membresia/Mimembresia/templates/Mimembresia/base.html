@@ -1,67 +1,68 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block titulo %}Museo Pass{% endblock %}</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block titulo %}Museo Pass{% endblock %}</title>
 
-    <link rel="stylesheet" href="{% static 'Mimembresia/styles/base.css' %}">
+  <link rel="stylesheet" href="{% static 'Mimembresia/styles/base.css' %}">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    {% block extra_css %}
-
-    {% endblock %}
+  {% block extra_css %}
+  {% endblock %}
 
 </head>
+
 <body>
 
   <header>
-      <a class="logo">MUSEOPASS</a>       
+    <a class="logo"> MUSEOPASS </a>       
 
       <nav>
-          <a href="home.html">HOME</a>
-          <a href="#about.html">ABOUT</a>
-          <a href="#museos.html">MUSEOS</a>
-          <a href="#membresias.html">MEMBRESIAS</a>
-          <a href="#contact.html">CONTACTO</a>
+        <a href="{% url 'index' %}">HOME</a>
+        <a href="{% url 'about' %}">ABOUT</a>
+        <a href="{% url 'museos' %}">MUSEOS</a>
+        <a href="{% url 'membresias' %}">MEMBRESIAS</a>
+        <a href="{% url 'contacto' %}">CONTACTO</a>
       </nav>
 
-   </header>
+  </header>
 
 
 
 
-  <main>
-    {% block main %}{% endblock %}
-  </main>
+    <main>
+      {% block main %}{% endblock %}
+    </main>
 
-  <footer>
+    <footer>
 
-    <div class="container">
-        <div><img class="imagen-foter" src="{% static 'Mimembresia/img/instagram.png' %}" alt="foter"></div>
-        <div><img class="imagen-foter" src="{% static 'Mimembresia/img/facebook.png' %}" alt="foter1"></div>
-        <div><img class="imagen-foter" src="{% static 'Mimembresia/img/youtube.png' %}" alt="foter2"></div>
-        <p>&copy; Museo Pass 2024</p>
-    </div>
-
-  </footer>
- 
-
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
- integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-  crossorigin="anonymous"></script>
-
-</body>
-
+      <div class="container">
+          <div><img class="imagen-foter" src="{% static 'Mimembresia/img/instagram.png' %}" alt="foter"></div>
+          <div><img class="imagen-foter" src="{% static 'Mimembresia/img/facebook.png' %}" alt="foter1"></div>
+          <div><img class="imagen-foter" src="{% static 'Mimembresia/img/youtube.png' %}" alt="foter2"></div>
+          <p>&copy; Museo Pass 2024</p>
+      </div>
+  
+    </footer>
+   
+  
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  
+   </body>
   </html>
+
     
 

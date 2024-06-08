@@ -1,0 +1,60 @@
+{% extends "Mimembresia/base.html" %} 
+
+{% load static %}
+
+
+{% block titulo %} MUSEOS {% endblock %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'Mimembresia/styles/museos.css' %}">
+
+
+{% endblock %}
+
+
+{% block main %}
+<main>
+
+    <div class="museo1">
+        <img src="{% static 'Mimembresia/img/imagen1.jpg' %}" alt="">
+
+        <div class="texto1">
+            <h1>Museo X</h1>
+            <h2>A 6-week online course</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <div class="boton">
+                <a href="">READ MORE</a>
+            </div>
+            
+
+        </div>
+    
+    </div>
+
+    <div class="museo2">
+        <div class="texto2">
+            <h1>Museo Y</h1>
+            <h2>A 4-week online course</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <div class="boton">
+                <a href="">READ MORE</a>
+            </div>
+            
+
+        </div>
+
+        <img src="{% static 'Mimembresia/img/imagen1.jpg' %}" alt="">
+    </div>
+
+
+   
+
+</main>
+{% endblock %}

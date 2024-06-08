@@ -1,0 +1,47 @@
+/* About */
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    padding: 7% 9%;
+}
+
+main img {
+    width: 30vw;
+    height: 70vh;
+    object-fit: cover;
+}
+
+.texto {
+    width: 42vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+
+.texto h1 {
+    font-size: 4rem;
+    color: var(--text-color);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.texto1 {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 600;
+    font-style: italic;
+    font-family: "poppins", sans-serif;
+    margin-bottom: 1rem;
+}
+
+.texto2 {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-family: "poppins", sans-serif;
+}

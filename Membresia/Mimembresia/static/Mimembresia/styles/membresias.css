@@ -1,0 +1,93 @@
+/* Membresias */
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 9%;
+    
+}
+
+.texto {
+    height: 20vh;
+    padding: 0 9% 3% 9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-bottom-color: var(--text-color);
+    border-bottom-style: solid;
+    border-bottom-width: 0.1rem;
+    width: 80vw;
+    margin-top: 6rem;
+}
+
+.texto h1 {
+    font-size: 4rem;
+    color: var(--text-color);
+}
+
+.texto p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-family: "poppins", sans-serif;
+    margin-top: 1rem;    
+}
+
+.membresias {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 50vh;
+    padding: 0 9%;
+    margin-bottom: 3rem;    
+}
+
+.tarjetas {
+    display: flex;
+    width: 20vw;
+    height: 55vh;
+    flex-direction: column;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+.tarjetas img {
+    width: 100%;
+    height: 40vh;
+    padding: 0.8rem;
+    object-fit: cover;
+}
+
+.tarjetas h2 {     
+    font-size: 2.2rem;
+    color: var(--text-color);
+    margin-top: 0.8rem;
+}
+
+.tarjetas h3 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-top: 0.5rem;
+}
+
+.tarjetas a {
+    display: inline-block;
+    background: var(--button-color);
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s;
+    margin: 1rem 0;
+}
+
+.tarjetas a:hover {
+    box-shadow: 0 0 0.5rem var(--text-color);
+}

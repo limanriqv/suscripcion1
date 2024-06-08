@@ -1,0 +1,64 @@
+{% extends "Mimembresia/base.html" %} 
+
+{% load static %}
+
+
+{% block titulo %} MEMBRESIAS {% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'Mimembresia/styles/membresias.css' %}">
+
+
+{% endblock %}
+
+
+{% block main %}
+<main>
+
+    <div class="texto">
+        <h1>ÚNETE A NUESTRA COMUNIDAD DE MEMBRESÍAS</h1>
+        <p>
+            Descubre nuestras diversas membresías, desde individuales hasta familiares, estudiantiles y VIP. Con una membresía, podrás explorar los tesoros culturales de los museos, participar en actividades educativas y disfrutar de la belleza del arte. Únete a nuestra comunidad de membresías y comienza a disfrutar de todos los beneficios que ofrecemos. ¡Te esperamos!
+        </p>
+    </div>
+
+    <div class="membresias">
+        
+        <div class="tarjetas">
+            <img src="{% static 'Mimembresia/img/imagen3.jpg' %}" alt="">
+            <h2>Membresía Individual</h2>
+            <h3>$10.000</h3>
+            <a href="">AÑADIR AL CARRITO</a>
+        </div>
+
+        <div class="tarjetas">
+            <img src="{% static 'Mimembresia/img/imagen3.jpg' %}" alt="">
+            <h2>Membresía Familiar</h2>
+            <h3>$15.000</h3>
+            <a href="">AÑADIR AL CARRITO</a>
+        </div>
+
+        <div class="tarjetas">
+            <img src="{% static 'Mimembresia/img/imagen3.jpg' %}" alt="">
+            <h2>Membresía Estudiantil</h2>
+            <h3>$5.000</h3>
+            <a href="">AÑADIR AL CARRITO</a>
+        </div>
+
+        <div class="tarjetas">
+            <img src="{% static 'Mimembresia/img/imagen3.jpg' %}" alt="">
+            <h2>Membresía VIP</h2>
+            <h3>$25.000</h3>
+            <a href="">AÑADIR AL CARRITO</a>
+        </div>
+
+    </div>
+
+
+
+</main>
+{% endblock %}
+
+
+
+
